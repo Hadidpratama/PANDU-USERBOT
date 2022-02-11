@@ -478,7 +478,30 @@ async def typewriter(typew):
     await typew.edit("DI JAWAB YAH,SIAP SIAP!!!")
     sleep(2)
     await typew.edit("PAKINTAKI RONG!!!")    
-    
+
+@register(outgoing=True, pattern='^.davinci(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`Kata davinci....`")
+    sleep(2)
+    await typew.edit("`K`")
+    await typew.edit("`Ka`")
+    await typew.edit("`Kal`")
+    await typew.edit("`Kali`")
+    await typew.edit("`Kalia`")
+    await typew.edit("`Kalian`")
+    await typew.edit("`Kalian s`")
+    await typew.edit("`Kalian se`")
+    await typew.edit("`Kalian sem`")
+    await typew.edit("`Kalian semu`")
+    await typew.edit("`Kalian semua`")
+    await typew.edit("`Kalian semua k`")
+    await typew.edit("`Kalian semua ko`")
+    await typew.edit("`Kalian semua kon`")
+    await typew.edit("`Kalian semua kont`")
+    await typew.edit("`Kalian semua konto`")
+    await typew.edit("`Kalian semua kontol`")
+
 
 CMD_HELP.update({
     "memes9":

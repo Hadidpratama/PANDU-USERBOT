@@ -461,8 +461,25 @@ async def typewriter(typew):
     await typew.edit("JAUHIN AJA AJG, BOCAH KYA DIA MAH")
     sleep(2)
     await typew.edit("TINGGALIN AJA YA AJG!!!!")
+
+@register(outgoing=True, pattern='^.pandu(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("WOI SUNDALA!!!")
+    sleep(2)
+    await typew.edit("KALO AKU BILANG PAKINTAKI RONG!!!")
+    sleep(2)
+    await typew.edit("KALIAN HARUS JAWAB YAH")
+    sleep(2)
+    await typew.edit("JAWABNYA ITU,ADAKAH!!!")
+    sleep(2)
+    await typew.edit("JAWABNYA KAYAK GITU,OKE")
+    sleep(2)
+    await typew.edit("DI JAWAB YAH,SIAP SIAP!!!")
+    sleep(2)
+    await typew.edit("PAKINTAKI RONG!!!")    
     
-    
+
 CMD_HELP.update({
     "memes9":
     "`.gabut` ; `.orgil`\

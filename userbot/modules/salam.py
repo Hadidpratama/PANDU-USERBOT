@@ -90,6 +90,12 @@ async def typewriter(typew):
     await typew.edit("**PASANG PP DULU DEK,BIAR ORANG SEGRUP TAU BETAPA HINA NYA MUKA LU😆**")
 
 
+@register(outgoing=True, pattern='^BOY(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**BOY YANG GANTENG ADALAH BOY YANG PAKE E KARENA INI BOY BUKAN SEMBARANG BOY**")
+
+
 @register(outgoing=True, pattern='^X(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)

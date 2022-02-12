@@ -26,6 +26,17 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
+@register(outgoing=True, pattern='^.upil(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(3)
+    await typew.edit("`Cuma Mau Bilang`")
+    sleep(3)
+    await typew.edit("`Ga Elesgeh Ga Keren`")
+    sleep(1)
+    await typew.edit("`I LOVE YOU 💞`")
+
+
 @register(outgoing=True, pattern='^.semangat(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
